@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import lxml
-import csv
 
 def get_html(url):
     response = requests.get(url)
@@ -47,4 +46,5 @@ def main():
     data1 = get_data(html)
     return data1
 
-main()
+if __name__ == '__main__':
+    main()
